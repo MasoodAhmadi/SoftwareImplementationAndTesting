@@ -1,0 +1,311 @@
+{
+  "id": "41a5cd6b-45cd-43f8-a434-64b68d81c5fd",
+  "version": "2.0",
+  "name": "BestBuyProject",
+  "url": "https://www.bestbuy.com",
+  "tests": [{
+    "id": "71b5e1e8-5923-472e-84de-6bfe91bb63ff",
+    "name": "01_basicTestSetup",
+    "commands": [{
+      "id": "fba599d1-1bf2-4565-a34e-1df315153f53",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e19015d-1009-4e5c-acd3-a329c4e58b70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81b248f0-7d80-458f-9893-016a95016357",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\"div:nth-child(1) > .country-selection > .us-link > h4\")",
+      "targets": [],
+      "value": "value"
+    }, {
+      "id": "5d890372-6b8b-46fc-86f4-6052db7a4987",
+      "comment": "",
+      "command": "if",
+      "target": "${value}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc6beb6c-0816-4bc4-96df-7f902562f3be",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a80db0a1-4721-46c6-afb7-e14523482aac",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .country-selection > .us-link > h4",
+      "targets": [
+        ["css=div:nth-child(1) > .country-selection > .us-link > img", "css:finder"],
+        ["xpath=//img[@alt='United States']", "xpath:img"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "478fca6f-51ec-41ea-85f7-4a284a2cf1bc",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a6aa181-3130-4f1f-a2c1-2ff12525cac8",
+      "comment": "",
+      "command": "pause",
+      "target": "4000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b53e2d8-6763-4ef2-b0da-6efa9c94751e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-nav",
+      "targets": [
+        ["css=.top-nav", "css:finder"],
+        ["xpath=//div[@id='shop-header-5d146873-bc27-446e-be57-0777ee16316f']/div/div/header/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33e0716b-142c-4d36-9215-8e909117069b",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65e41525-3a8a-4349-8eda-413ebff69a26",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfe04ffe-38af-4f40-ab59-a30a1aa3a61f",
+      "comment": "",
+      "command": "//click",
+      "target": "xpath=//div[2]/nav",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc5ecc96-e9e3-4fee-83c0-e910b34e6ea1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Best Buy Totaltech",
+      "targets": [
+        ["linkText=Best Buy Totaltech", "linkText"],
+        ["css=li:nth-child(3) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Buy Totaltech')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-89f854cf-644b-405f-a278-2cdf894e29e4']/div/div/header/div[2]/nav/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/totaltech/pcmcat1629315977983.c?id=pcmcat1629315977983')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Buy Totaltech')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3f5de7e-3965-4e45-b59d-0046419ac2a4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Best Buy Totaltech",
+      "targets": [
+        ["linkText=Best Buy Totaltech", "linkText"],
+        ["css=li:nth-child(3) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Buy Totaltech')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-89f854cf-644b-405f-a278-2cdf894e29e4']/div/div/header/div[2]/nav/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/totaltech/pcmcat1629315977983.c?id=pcmcat1629315977983')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Buy Totaltech')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b116841e-80d0-4e95-be6a-6cb71b22ec1e",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e87a3018-5ef6-4cfe-b243-3ee1066b2a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .bottom-left-links",
+      "targets": [
+        ["linkText=Deal of the Day", "linkText"],
+        ["css=li:nth-child(2) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Deal of the Day')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-89f854cf-644b-405f-a278-2cdf894e29e4']/div/div/header/div[2]/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deal of the Day')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a98463e-b80f-4b37-ab72-7a970645e0e3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Top Deals",
+      "targets": [
+        ["linkText=Top Deals", "linkText"],
+        ["css=li:nth-child(1) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Top Deals')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Top Deals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ab2f96c-9591-4a85-bd33-902fdd37e980",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Top Deals",
+      "targets": [
+        ["linkText=Top Deals", "linkText"],
+        ["css=li:nth-child(1) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Top Deals')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Top Deals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30bb2c72-23ea-4dbf-8489-c03fc103decd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Top Deals",
+      "targets": [
+        ["linkText=Top Deals", "linkText"],
+        ["css=li:nth-child(1) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Top Deals')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/top-deals/pcmcat1563299784494.c?id=pcmcat1563299784494')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Top Deals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c84a716-917f-4427-859e-35312409f451",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Deal of the Day",
+      "targets": [
+        ["linkText=Deal of the Day", "linkText"],
+        ["css=li:nth-child(2) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Deal of the Day')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deal of the Day')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ae542d-9cd2-41ba-a22a-0af9dcf2efc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deal of the Day",
+      "targets": [
+        ["linkText=Deal of the Day", "linkText"],
+        ["css=li:nth-child(2) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Deal of the Day')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deal of the Day')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54520644-58bc-4c45-84b5-dbeb8ad8d93e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Deal of the Day",
+      "targets": [
+        ["linkText=Deal of the Day", "linkText"],
+        ["css=li:nth-child(2) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Deal of the Day')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/misc/deal-of-the-day/pcmcat248000050016.c?id=pcmcat248000050016')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deal of the Day')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "487987f1-1fcd-484c-9aac-af976b89269b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Best Buy Totaltech",
+      "targets": [
+        ["linkText=Best Buy Totaltech", "linkText"],
+        ["css=li:nth-child(3) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Buy Totaltech')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/totaltech/pcmcat1629315977983.c?id=pcmcat1629315977983')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Buy Totaltech')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c6531f-d18c-4896-a332-437fd02eb875",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Buy Totaltech",
+      "targets": [
+        ["linkText=Best Buy Totaltech", "linkText"],
+        ["css=li:nth-child(3) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Buy Totaltech')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/totaltech/pcmcat1629315977983.c?id=pcmcat1629315977983')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Buy Totaltech')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dbe74c6-fd95-46a8-b97d-f7c82a6dd1a0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Best Buy Totaltech",
+      "targets": [
+        ["linkText=Best Buy Totaltech", "linkText"],
+        ["css=li:nth-child(3) > .bottom-left-links", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Buy Totaltech')]", "xpath:link"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/site/electronics/totaltech/pcmcat1629315977983.c?id=pcmcat1629315977983')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Buy Totaltech')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53dabe8a-0184-454e-91ef-312de4582eec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottom-nav",
+      "targets": [
+        ["css=.bottom-nav", "css:finder"],
+        ["xpath=//div[@id='shop-header-9b31762a-8db3-49f1-871c-0279edd47fc2']/div/div/header/div[2]/nav", "xpath:idRelative"],
+        ["xpath=//div[2]/nav", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "815d030a-9739-484e-8f1f-0f660f39a737",
+    "name": "initial_part",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71b5e1e8-5923-472e-84de-6bfe91bb63ff"]
+  }],
+  "urls": ["https://www.bestbuy.com/"],
+  "plugins": []
+}
