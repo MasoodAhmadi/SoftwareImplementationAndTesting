@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://www.bestbuy.com/",
+  "textlink": "div:nth-child(1) > .country-selection > .us-link > h4",
+  "americaFlaq": "//a[2]/img",
+  "getVarif": "div:nth-child(1) > .country-selection > .us-link > h4",
+  "flagImage": "//a[2]/img",
+  "closeButton": "/html/body/main/div[2]/div[5]/div/div/div[1]/div/div/div/div/button",
+  "productButton": "li:nth-child(2) > .bottom-left-links",
+  "itemClick": "//li/a",
+  "itemDetials": "//li[2]/a",
+  "itemDetialsProduct": "//li[3]/a",
+  "anotherItemClick": "//div[2]/nav",
+  "cartBox": "//*[@id='shop-cart-icon-66539563-0470-4784-b8eb-266e9c2279b2']/div/div/div/a/img"
+}
