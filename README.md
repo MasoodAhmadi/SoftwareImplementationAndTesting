@@ -2,10 +2,10 @@
 
 ## Installation
 
-Use the package manager npm to install foobar.
+Use the package manager npm to install.
 
 ```bash
-npm install @wdio/cli install foobar
+npm install @wdio/cli install
 ```
 
 then
